@@ -1,0 +1,13 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sue.demo.mappers.OtherMapper">
+	
+	<insert id="insertOther" parameterType="Other">
+		insert into t_other values(null,#{pic},#{remark})
+	</insert>
+	
+	<select id="getOtherById" parameterType="int" resultType="Other">
+		select * from t_other where id = #{id}
+	</select>
+</mapper>

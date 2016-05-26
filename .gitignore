@@ -1,0 +1,15 @@
+*.class
+*.classpath
+*.project
+.mtj.tmp/
+
+*.war
+*.ear
+
+/.settings/
+/target/
+/build/
+/data/
+/bin/
+
+hs_err_pid*
